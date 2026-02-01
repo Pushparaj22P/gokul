@@ -18,7 +18,7 @@ except ImportError:
 # 🤖 GEMINI API CONFIG
 # ---------------------------
 # Note: In a production app, use st.secrets for API keys
-GEMINI_API_KEY = "AIzaSyBUNK20EnWC-_2OCJODPPoNCtomnKUC26o"
+
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 
@@ -256,7 +256,7 @@ else:
                 try:
                     response = client.models.generate_content(
                     model="gemini-1.5-flash",
-                    contents="Hello Gemini"
+                    contents=prompt
                     )
                     st.info(response.text)
                 except Exception as e:
@@ -267,6 +267,7 @@ else:
     st.markdown("---")
 
     st.markdown("👨‍💻 Developed by **Gokul & Gokulakrishnan**")
+
 
 
 
