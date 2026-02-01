@@ -21,10 +21,7 @@ except ImportError:
 GEMINI_API_KEY = "AIzaSyBUNK20EnWC-_2OCJODPPoNCtomnKUC26o"
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-response = client.models.generate_content(
-    model="gemini-1.5-flash",
-    contents="Hello Gemini"
-)
+
 
 st.set_page_config(page_title="Tamil Nadu Job Market Dashboard", layout="wide")
 
@@ -257,7 +254,10 @@ else:
                 Provide a helpful, data-driven answer based on the provided jobs.
                 """
                 try:
-                    response = gemini_model.generate_content(prompt)
+                    response = client.models.generate_content(
+                    model="gemini-1.5-flash",
+                    contents="Hello Gemini"
+                    )
                     st.info(response.text)
                 except Exception as e:
                     st.error(f"AI Error: {e}")
@@ -267,6 +267,7 @@ else:
     st.markdown("---")
 
     st.markdown("👨‍💻 Developed by **Gokul & Gokulakrishnan**")
+
 
 
 
