@@ -69,7 +69,7 @@ else:
 
     @st.cache_data
     def load_data():
-        return pd.read_csv("tamilnadu_job_market_200_enriched.csv")
+        return pd.read_csv("gokul/tamilnadu_job_market_200_enriched.csv")
 
     df = load_data()
 
@@ -260,4 +260,5 @@ else:
             st.warning("Please enter a question.")
 
     st.markdown("---")
+
     st.markdown("👨‍💻 Developed by **Gokul & Gokulakrishnan**")
