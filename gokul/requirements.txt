@@ -2,4 +2,5 @@ streamlit
 google-genai
 pandas
 matplotlib
-GEMINI_API_KEY = "AIzaSyBUNK20EnWC-_2OCJODPPoNCtomnKUC26o"
+
+
