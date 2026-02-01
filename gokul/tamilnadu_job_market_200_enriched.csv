@@ -1,0 +1,201 @@
+Job_ID,Job_Title,Job_Sector,District,Skills_Required,Experience_Level,Salary_Monthly,Job_Count,Company_Name,Employment_Type,Education_Requirement,Industry,Remote_Option,IT_or_Non_IT
+TN001,Accountant,Finance,Madurai,Tally;GST;Excel,Entry,21440,108,Infosys,Contract,Bachelor's,Information Technology,No,Non-IT
+TN002,HR Executive,Corporate,Chennai,HRMS;Recruitment,Entry,24689,51,Zoho,Full-Time,Bachelor's,Engineering,No,Non-IT
+TN003,Web Developer,IT,Thanjavur,HTML;CSS;JavaScript,Senior,51865,69,BYJU'S,Contract,Diploma,Marketing,No,IT
+TN004,Mechanical Engineer,Manufacturing,Madurai,CAD;SolidWorks,Entry,20937,126,Infosys,Contract,Master's,Engineering,Yes,Non-IT
+TN005,Web Developer,IT,Trichy,HTML;CSS;JavaScript,Mid,37830,124,L&T,Part-Time,Diploma,Retail,No,IT
+TN006,Digital Marketer,Marketing,Tiruppur,SEO;Google Ads;Content,Mid,31388,140,Zoho,Full-Time,Diploma,Transport,Yes,Non-IT
+TN007,Digital Marketer,Marketing,Thanjavur,SEO;Google Ads;Content,Senior,67236,94,Cognizant,Full-Time,PhD,Retail,No,Non-IT
+TN008,Web Developer,IT,Tiruppur,HTML;CSS;JavaScript,Senior,66303,112,L&T,Part-Time,PhD,Construction,Yes,IT
+TN009,Accountant,Finance,Vellore,Tally;GST;Excel,Mid,36671,127,TCS,Part-Time,Not Specified,Marketing,No,Non-IT
+TN010,Accountant,Finance,Vellore,Tally;GST;Excel,Mid,31025,53,TCS,Full-Time,PhD,Transport,No,Non-IT
+TN011,Nurse,Healthcare,Chennai,Patient Care;Nursing Degree,Entry,22613,110,BYJU'S,Contract,Not Specified,Marketing,No,Non-IT
+TN012,Logistics Coordinator,Transport,Vellore,Inventory;Coordination,Senior,48222,149,L&T,Internship,Master's,Retail,No,Non-IT
+TN013,Mechanical Engineer,Manufacturing,Madurai,CAD;SolidWorks,Mid,31076,73,BYJU'S,Part-Time,Master's,Media,Yes,Non-IT
+TN014,Web Developer,IT,Thanjavur,HTML;CSS;JavaScript,Senior,59153,115,HDFC Bank,Full-Time,Bachelor's,Retail,Yes,IT
+TN015,HR Executive,Corporate,Thanjavur,HRMS;Recruitment,Senior,67624,116,Apollo Hospitals,Part-Time,PhD,Marketing,Yes,Non-IT
+TN016,Logistics Coordinator,Transport,Thanjavur,Inventory;Coordination,Senior,47270,95,TVS Motors,Contract,Bachelor's,Media,Yes,Non-IT
+TN017,Accountant,Finance,Thanjavur,Tally;GST;Excel,Mid,37956,84,TVS Motors,Contract,Master's,Engineering,No,Non-IT
+TN018,Logistics Coordinator,Transport,Salem,Inventory;Coordination,Mid,28662,52,Zoho,Part-Time,Bachelor's,Information Technology,No,Non-IT
+TN019,Civil Engineer,Construction,Vellore,AutoCAD;Project Mgmt,Mid,28011,125,Amazon,Contract,PhD,Transport,Yes,Non-IT
+TN020,Logistics Coordinator,Transport,Thanjavur,Inventory;Coordination,Mid,34385,66,L&T,Part-Time,Diploma,Marketing,No,Non-IT
+TN021,Teacher,Education,Trichy,Subject Knowledge;B.Ed,Mid,29845,54,Apollo Hospitals,Internship,Master's,Finance,Yes,Non-IT
+TN022,Sales Executive,Retail,Tuticorin,Communication;CRM,Entry,24635,77,Amazon,Internship,Not Specified,Media,Yes,Non-IT
+TN023,Sales Executive,Retail,Tuticorin,Communication;CRM,Entry,21008,88,TCS,Part-Time,Master's,Healthcare,No,Non-IT
+TN024,Data Analyst,IT,Tiruppur,Python;SQL;Excel,Entry,19796,114,Amazon,Part-Time,Master's,Retail,Yes,IT
+TN025,Web Developer,IT,Erode,HTML;CSS;JavaScript,Mid,38758,87,TCS,Part-Time,Not Specified,Construction,No,IT
+TN026,Sales Executive,Retail,Tiruppur,Communication;CRM,Senior,53602,147,Zoho,Internship,PhD,Construction,No,Non-IT
+TN027,AI Engineer,IT,Vellore,Python;ML;TensorFlow,Senior,69676,91,Cognizant,Part-Time,Bachelor's,Healthcare,No,IT
+TN028,Digital Marketer,Marketing,Chennai,SEO;Google Ads;Content,Senior,62541,58,BYJU'S,Full-Time,Not Specified,Healthcare,Yes,Non-IT
+TN029,Teacher,Education,Trichy,Subject Knowledge;B.Ed,Senior,51847,133,BYJU'S,Full-Time,Not Specified,Construction,No,Non-IT
+TN030,Teacher,Education,Chennai,Subject Knowledge;B.Ed,Mid,28619,109,TCS,Contract,Not Specified,Transport,No,Non-IT
+TN031,Sales Executive,Retail,Tuticorin,Communication;CRM,Senior,57167,128,Zoho,Part-Time,Bachelor's,Media,No,Non-IT
+TN032,AI Engineer,IT,Vellore,Python;ML;TensorFlow,Senior,50715,101,TCS,Contract,PhD,Media,No,IT
+TN033,Data Analyst,IT,Vellore,Python;SQL;Excel,Mid,33973,133,Apollo Hospitals,Full-Time,Diploma,Healthcare,No,IT
+TN034,HR Executive,Corporate,Salem,HRMS;Recruitment,Entry,27574,74,TVS Motors,Contract,Not Specified,Marketing,No,Non-IT
+TN035,Teacher,Education,Chennai,Subject Knowledge;B.Ed,Mid,39291,110,Cognizant,Internship,PhD,Finance,No,Non-IT
+TN036,HR Executive,Corporate,Tuticorin,HRMS;Recruitment,Senior,58590,142,BYJU'S,Full-Time,Not Specified,Healthcare,No,Non-IT
+TN037,AI Engineer,IT,Coimbatore,Python;ML;TensorFlow,Entry,24540,142,Apollo Hospitals,Contract,Bachelor's,Finance,Yes,IT
+TN038,Content Writer,Media,Coimbatore,Writing;SEO;Grammar,Mid,35738,99,L&T,Part-Time,Diploma,Healthcare,Yes,Non-IT
+TN039,Content Writer,Media,Tiruppur,Writing;SEO;Grammar,Senior,62803,124,Cognizant,Internship,PhD,Transport,Yes,Non-IT
+TN040,Logistics Coordinator,Transport,Vellore,Inventory;Coordination,Senior,68606,114,TCS,Part-Time,Master's,Finance,No,Non-IT
+TN041,HR Executive,Corporate,Tuticorin,HRMS;Recruitment,Entry,21748,107,BYJU'S,Part-Time,PhD,Engineering,Yes,Non-IT
+TN042,Sales Executive,Retail,Tiruppur,Communication;CRM,Mid,39905,117,L&T,Full-Time,PhD,Construction,No,Non-IT
+TN043,Logistics Coordinator,Transport,Tuticorin,Inventory;Coordination,Senior,46272,133,L&T,Internship,Master's,Retail,Yes,Non-IT
+TN044,Mechanical Engineer,Manufacturing,Chennai,CAD;SolidWorks,Mid,35049,139,Amazon,Full-Time,Diploma,Healthcare,Yes,Non-IT
+TN045,Civil Engineer,Construction,Tiruppur,AutoCAD;Project Mgmt,Senior,69467,132,TCS,Part-Time,Diploma,Education,No,Non-IT
+TN046,Accountant,Finance,Erode,Tally;GST;Excel,Mid,32497,87,Zoho,Internship,Master's,Education,Yes,Non-IT
+TN047,Data Analyst,IT,Vellore,Python;SQL;Excel,Senior,63182,136,Cognizant,Part-Time,Master's,Media,Yes,IT
+TN048,Sales Executive,Retail,Coimbatore,Communication;CRM,Entry,18446,142,L&T,Internship,PhD,Healthcare,No,Non-IT
+TN049,Logistics Coordinator,Transport,Trichy,Inventory;Coordination,Senior,65481,77,Amazon,Full-Time,PhD,Retail,No,Non-IT
+TN050,HR Executive,Corporate,Thanjavur,HRMS;Recruitment,Entry,20251,53,Cognizant,Internship,Diploma,Marketing,No,Non-IT
+TN051,Teacher,Education,Vellore,Subject Knowledge;B.Ed,Senior,57707,125,Amazon,Contract,Not Specified,Information Technology,Yes,Non-IT
+TN052,Sales Executive,Retail,Vellore,Communication;CRM,Senior,59693,72,Amazon,Contract,Master's,Information Technology,Yes,Non-IT
+TN053,HR Executive,Corporate,Erode,HRMS;Recruitment,Senior,57372,107,Apollo Hospitals,Contract,Diploma,Construction,No,Non-IT
+TN054,Logistics Coordinator,Transport,Coimbatore,Inventory;Coordination,Entry,26497,105,TCS,Part-Time,Bachelor's,Transport,Yes,Non-IT
+TN055,Web Developer,IT,Madurai,HTML;CSS;JavaScript,Senior,64452,130,Apollo Hospitals,Contract,Bachelor's,Engineering,Yes,IT
+TN056,Sales Executive,Retail,Salem,Communication;CRM,Senior,68785,130,BYJU'S,Internship,Diploma,Transport,No,Non-IT
+TN057,Pharmacist,Healthcare,Erode,Pharmacy Degree;Licensing,Senior,57444,105,Infosys,Full-Time,Bachelor's,Education,Yes,Non-IT
+TN058,Electrician,Skilled Trade,Vellore,Electrical Wiring;License,Senior,60386,117,L&T,Contract,Diploma,Transport,No,Non-IT
+TN059,Content Writer,Media,Coimbatore,Writing;SEO;Grammar,Entry,19889,66,TCS,Contract,Master's,Information Technology,No,Non-IT
+TN060,Web Developer,IT,Vellore,HTML;CSS;JavaScript,Mid,30905,148,Amazon,Full-Time,Master's,Education,Yes,IT
+TN061,Teacher,Education,Thanjavur,Subject Knowledge;B.Ed,Senior,59996,99,Amazon,Contract,Master's,Marketing,Yes,Non-IT
+TN062,Sales Executive,Retail,Erode,Communication;CRM,Senior,56586,62,Cognizant,Contract,Not Specified,Marketing,No,Non-IT
+TN063,Accountant,Finance,Chennai,Tally;GST;Excel,Entry,22174,65,HDFC Bank,Full-Time,PhD,Education,No,Non-IT
+TN064,Sales Executive,Retail,Thanjavur,Communication;CRM,Entry,20320,147,Cognizant,Internship,Master's,Transport,Yes,Non-IT
+TN065,Electrician,Skilled Trade,Erode,Electrical Wiring;License,Mid,28317,131,Apollo Hospitals,Internship,Bachelor's,Engineering,Yes,Non-IT
+TN066,HR Executive,Corporate,Salem,HRMS;Recruitment,Entry,18773,51,Amazon,Internship,PhD,Construction,Yes,Non-IT
+TN067,Civil Engineer,Construction,Tiruppur,AutoCAD;Project Mgmt,Senior,51500,135,Cognizant,Full-Time,Bachelor's,Transport,No,Non-IT
+TN068,Pharmacist,Healthcare,Erode,Pharmacy Degree;Licensing,Mid,32241,107,L&T,Contract,Bachelor's,Transport,No,Non-IT
+TN069,Web Developer,IT,Erode,HTML;CSS;JavaScript,Mid,35355,98,Apollo Hospitals,Contract,PhD,Healthcare,Yes,IT
+TN070,Data Analyst,IT,Thanjavur,Python;SQL;Excel,Entry,25132,104,TCS,Contract,Diploma,Finance,No,IT
+TN071,Civil Engineer,Construction,Coimbatore,AutoCAD;Project Mgmt,Mid,38029,78,Infosys,Full-Time,PhD,Information Technology,No,Non-IT
+TN072,Electrician,Skilled Trade,Vellore,Electrical Wiring;License,Entry,18363,135,Cognizant,Contract,Bachelor's,Media,Yes,Non-IT
+TN073,HR Executive,Corporate,Thanjavur,HRMS;Recruitment,Mid,32617,148,TVS Motors,Full-Time,Not Specified,Information Technology,No,Non-IT
+TN074,Electrician,Skilled Trade,Vellore,Electrical Wiring;License,Entry,25602,56,Cognizant,Part-Time,Not Specified,Retail,Yes,Non-IT
+TN075,Civil Engineer,Construction,Salem,AutoCAD;Project Mgmt,Entry,25451,103,Cognizant,Part-Time,Bachelor's,Marketing,Yes,Non-IT
+TN076,Pharmacist,Healthcare,Chennai,Pharmacy Degree;Licensing,Senior,64871,120,Infosys,Internship,Master's,Marketing,Yes,Non-IT
+TN077,Mechanical Engineer,Manufacturing,Vellore,CAD;SolidWorks,Mid,37152,142,BYJU'S,Full-Time,Master's,Healthcare,Yes,Non-IT
+TN078,Pharmacist,Healthcare,Erode,Pharmacy Degree;Licensing,Senior,60415,54,TVS Motors,Part-Time,Bachelor's,Education,Yes,Non-IT
+TN079,Content Writer,Media,Chennai,Writing;SEO;Grammar,Senior,55031,63,Zoho,Contract,Master's,Media,No,Non-IT
+TN080,Data Analyst,IT,Madurai,Python;SQL;Excel,Mid,31649,136,Infosys,Contract,PhD,Retail,No,IT
+TN081,Civil Engineer,Construction,Chennai,AutoCAD;Project Mgmt,Mid,33605,130,Amazon,Contract,PhD,Retail,Yes,Non-IT
+TN082,Data Analyst,IT,Coimbatore,Python;SQL;Excel,Mid,33356,91,Infosys,Contract,Bachelor's,Healthcare,No,IT
+TN083,AI Engineer,IT,Erode,Python;ML;TensorFlow,Entry,24363,129,Cognizant,Part-Time,Diploma,Information Technology,Yes,IT
+TN084,Mechanical Engineer,Manufacturing,Coimbatore,CAD;SolidWorks,Mid,39827,146,Zoho,Part-Time,PhD,Retail,Yes,Non-IT
+TN085,Nurse,Healthcare,Salem,Patient Care;Nursing Degree,Entry,26091,150,TVS Motors,Part-Time,Bachelor's,Information Technology,Yes,Non-IT
+TN086,Mechanical Engineer,Manufacturing,Madurai,CAD;SolidWorks,Senior,56709,122,HDFC Bank,Contract,Diploma,Engineering,Yes,Non-IT
+TN087,Sales Executive,Retail,Madurai,Communication;CRM,Entry,18703,84,Cognizant,Full-Time,Bachelor's,Construction,Yes,Non-IT
+TN088,AI Engineer,IT,Thanjavur,Python;ML;TensorFlow,Entry,18472,57,Infosys,Contract,Not Specified,Education,Yes,IT
+TN089,Web Developer,IT,Vellore,HTML;CSS;JavaScript,Senior,61127,109,HDFC Bank,Internship,Bachelor's,Finance,Yes,IT
+TN090,Accountant,Finance,Coimbatore,Tally;GST;Excel,Mid,37293,88,HDFC Bank,Contract,PhD,Retail,No,Non-IT
+TN091,Teacher,Education,Tiruppur,Subject Knowledge;B.Ed,Mid,28431,51,Apollo Hospitals,Internship,Bachelor's,Transport,Yes,Non-IT
+TN092,Logistics Coordinator,Transport,Vellore,Inventory;Coordination,Mid,35359,136,HDFC Bank,Contract,Master's,Marketing,No,Non-IT
+TN093,Content Writer,Media,Tuticorin,Writing;SEO;Grammar,Mid,33817,52,HDFC Bank,Internship,Not Specified,Construction,Yes,Non-IT
+TN094,Content Writer,Media,Chennai,Writing;SEO;Grammar,Entry,18400,60,Zoho,Internship,Master's,Information Technology,No,Non-IT
+TN095,AI Engineer,IT,Tiruppur,Python;ML;TensorFlow,Entry,23709,82,TCS,Contract,Diploma,Transport,No,IT
+TN096,Nurse,Healthcare,Salem,Patient Care;Nursing Degree,Entry,25474,131,Amazon,Contract,PhD,Media,Yes,Non-IT
+TN097,Mechanical Engineer,Manufacturing,Salem,CAD;SolidWorks,Entry,26144,141,Cognizant,Internship,PhD,Construction,No,Non-IT
+TN098,Mechanical Engineer,Manufacturing,Vellore,CAD;SolidWorks,Entry,20092,83,HDFC Bank,Internship,PhD,Construction,No,Non-IT
+TN099,Pharmacist,Healthcare,Tiruppur,Pharmacy Degree;Licensing,Entry,19791,94,HDFC Bank,Full-Time,Master's,Engineering,No,Non-IT
+TN100,Mechanical Engineer,Manufacturing,Vellore,CAD;SolidWorks,Senior,63059,104,Cognizant,Internship,Master's,Healthcare,No,Non-IT
+TN101,Teacher,Education,Tuticorin,Subject Knowledge;B.Ed,Senior,63106,82,TVS Motors,Internship,Master's,Marketing,No,Non-IT
+TN102,Sales Executive,Retail,Chennai,Communication;CRM,Entry,21886,109,Amazon,Internship,PhD,Information Technology,No,Non-IT
+TN103,Teacher,Education,Salem,Subject Knowledge;B.Ed,Entry,23932,88,Infosys,Contract,Diploma,Engineering,Yes,Non-IT
+TN104,HR Executive,Corporate,Vellore,HRMS;Recruitment,Senior,50100,136,TVS Motors,Internship,Master's,Finance,Yes,Non-IT
+TN105,Web Developer,IT,Coimbatore,HTML;CSS;JavaScript,Senior,47064,56,Amazon,Part-Time,Master's,Education,Yes,IT
+TN106,AI Engineer,IT,Erode,Python;ML;TensorFlow,Mid,32801,121,TCS,Part-Time,PhD,Finance,Yes,IT
+TN107,Sales Executive,Retail,Trichy,Communication;CRM,Senior,63831,135,Infosys,Part-Time,PhD,Healthcare,Yes,Non-IT
+TN108,Content Writer,Media,Salem,Writing;SEO;Grammar,Entry,23570,75,L&T,Part-Time,Diploma,Finance,No,Non-IT
+TN109,Pharmacist,Healthcare,Vellore,Pharmacy Degree;Licensing,Mid,29533,106,HDFC Bank,Internship,Not Specified,Media,No,Non-IT
+TN110,HR Executive,Corporate,Erode,HRMS;Recruitment,Entry,20422,81,Zoho,Internship,Diploma,Retail,Yes,Non-IT
+TN111,Teacher,Education,Madurai,Subject Knowledge;B.Ed,Mid,37770,130,Apollo Hospitals,Part-Time,Master's,Information Technology,No,Non-IT
+TN112,Mechanical Engineer,Manufacturing,Coimbatore,CAD;SolidWorks,Entry,26293,146,Cognizant,Internship,Diploma,Construction,No,Non-IT
+TN113,Nurse,Healthcare,Chennai,Patient Care;Nursing Degree,Mid,39067,91,Zoho,Internship,PhD,Construction,No,Non-IT
+TN114,Logistics Coordinator,Transport,Tiruppur,Inventory;Coordination,Senior,65380,114,L&T,Part-Time,Not Specified,Media,No,Non-IT
+TN115,AI Engineer,IT,Salem,Python;ML;TensorFlow,Mid,29504,121,Cognizant,Contract,Diploma,Healthcare,Yes,IT
+TN116,HR Executive,Corporate,Tuticorin,HRMS;Recruitment,Senior,57164,54,HDFC Bank,Full-Time,PhD,Retail,Yes,Non-IT
+TN117,Pharmacist,Healthcare,Vellore,Pharmacy Degree;Licensing,Senior,54880,115,L&T,Internship,Master's,Healthcare,Yes,Non-IT
+TN118,Sales Executive,Retail,Coimbatore,Communication;CRM,Senior,66090,51,Cognizant,Part-Time,Master's,Engineering,No,Non-IT
+TN119,Logistics Coordinator,Transport,Erode,Inventory;Coordination,Mid,38045,95,Apollo Hospitals,Part-Time,Not Specified,Finance,Yes,Non-IT
+TN120,Sales Executive,Retail,Tiruppur,Communication;CRM,Senior,60681,144,BYJU'S,Part-Time,PhD,Transport,Yes,Non-IT
+TN121,Nurse,Healthcare,Coimbatore,Patient Care;Nursing Degree,Senior,48557,100,TVS Motors,Internship,Not Specified,Retail,Yes,Non-IT
+TN122,Electrician,Skilled Trade,Salem,Electrical Wiring;License,Mid,33838,129,Infosys,Internship,Not Specified,Marketing,Yes,Non-IT
+TN123,Sales Executive,Retail,Trichy,Communication;CRM,Mid,32366,111,TVS Motors,Part-Time,Bachelor's,Construction,No,Non-IT
+TN124,Electrician,Skilled Trade,Trichy,Electrical Wiring;License,Entry,21051,71,BYJU'S,Part-Time,Not Specified,Construction,Yes,Non-IT
+TN125,Teacher,Education,Vellore,Subject Knowledge;B.Ed,Senior,64781,146,Amazon,Contract,Bachelor's,Marketing,No,Non-IT
+TN126,AI Engineer,IT,Vellore,Python;ML;TensorFlow,Entry,27605,137,TVS Motors,Part-Time,Not Specified,Finance,Yes,IT
+TN127,Logistics Coordinator,Transport,Erode,Inventory;Coordination,Mid,29496,137,Apollo Hospitals,Internship,PhD,Construction,No,Non-IT
+TN128,Nurse,Healthcare,Tiruppur,Patient Care;Nursing Degree,Senior,53829,54,L&T,Full-Time,Master's,Retail,No,Non-IT
+TN129,Logistics Coordinator,Transport,Trichy,Inventory;Coordination,Senior,68268,134,Apollo Hospitals,Contract,Master's,Healthcare,Yes,Non-IT
+TN130,HR Executive,Corporate,Tuticorin,HRMS;Recruitment,Senior,58784,68,Amazon,Part-Time,PhD,Construction,Yes,Non-IT
+TN131,Electrician,Skilled Trade,Coimbatore,Electrical Wiring;License,Entry,25973,79,Amazon,Contract,Bachelor's,Media,Yes,Non-IT
+TN132,Accountant,Finance,Erode,Tally;GST;Excel,Entry,26296,138,HDFC Bank,Internship,Not Specified,Retail,No,Non-IT
+TN133,Civil Engineer,Construction,Coimbatore,AutoCAD;Project Mgmt,Senior,66074,71,BYJU'S,Contract,Not Specified,Healthcare,Yes,Non-IT
+TN134,HR Executive,Corporate,Salem,HRMS;Recruitment,Entry,23122,68,Apollo Hospitals,Full-Time,Not Specified,Education,Yes,Non-IT
+TN135,Mechanical Engineer,Manufacturing,Erode,CAD;SolidWorks,Mid,37499,128,TVS Motors,Full-Time,PhD,Media,No,Non-IT
+TN136,Electrician,Skilled Trade,Salem,Electrical Wiring;License,Entry,21462,104,TVS Motors,Full-Time,Bachelor's,Education,No,Non-IT
+TN137,Web Developer,IT,Madurai,HTML;CSS;JavaScript,Mid,37762,84,TCS,Full-Time,Master's,Engineering,Yes,IT
+TN138,Mechanical Engineer,Manufacturing,Tuticorin,CAD;SolidWorks,Senior,62947,62,L&T,Contract,Master's,Retail,Yes,Non-IT
+TN139,Logistics Coordinator,Transport,Salem,Inventory;Coordination,Entry,27818,58,Cognizant,Full-Time,Master's,Transport,No,Non-IT
+TN140,Content Writer,Media,Trichy,Writing;SEO;Grammar,Senior,66501,54,TVS Motors,Contract,Not Specified,Finance,Yes,Non-IT
+TN141,Digital Marketer,Marketing,Madurai,SEO;Google Ads;Content,Senior,48807,132,Amazon,Internship,Diploma,Construction,Yes,Non-IT
+TN142,Teacher,Education,Tiruppur,Subject Knowledge;B.Ed,Senior,52486,135,Apollo Hospitals,Part-Time,Diploma,Construction,Yes,Non-IT
+TN143,Web Developer,IT,Trichy,HTML;CSS;JavaScript,Senior,58040,95,Zoho,Full-Time,Master's,Retail,No,IT
+TN144,AI Engineer,IT,Erode,Python;ML;TensorFlow,Entry,23518,94,TVS Motors,Internship,PhD,Transport,Yes,IT
+TN145,Pharmacist,Healthcare,Tuticorin,Pharmacy Degree;Licensing,Entry,25475,125,Amazon,Contract,Bachelor's,Retail,Yes,Non-IT
+TN146,Content Writer,Media,Tiruppur,Writing;SEO;Grammar,Senior,53642,134,TCS,Internship,Diploma,Transport,Yes,Non-IT
+TN147,Civil Engineer,Construction,Chennai,AutoCAD;Project Mgmt,Entry,22315,57,Cognizant,Internship,Bachelor's,Finance,Yes,Non-IT
+TN148,Pharmacist,Healthcare,Trichy,Pharmacy Degree;Licensing,Mid,33585,135,HDFC Bank,Full-Time,Bachelor's,Media,Yes,Non-IT
+TN149,Web Developer,IT,Vellore,HTML;CSS;JavaScript,Mid,29479,102,HDFC Bank,Full-Time,Diploma,Transport,Yes,IT
+TN150,Civil Engineer,Construction,Salem,AutoCAD;Project Mgmt,Entry,20201,121,TVS Motors,Internship,Diploma,Engineering,No,Non-IT
+TN151,Data Analyst,IT,Madurai,Python;SQL;Excel,Entry,27641,63,BYJU'S,Internship,Diploma,Construction,No,IT
+TN152,Nurse,Healthcare,Salem,Patient Care;Nursing Degree,Mid,34071,51,HDFC Bank,Internship,Not Specified,Finance,Yes,Non-IT
+TN153,Data Analyst,IT,Tuticorin,Python;SQL;Excel,Entry,19366,117,Infosys,Part-Time,Bachelor's,Information Technology,Yes,IT
+TN154,Accountant,Finance,Tuticorin,Tally;GST;Excel,Entry,22819,150,L&T,Full-Time,Diploma,Media,No,Non-IT
+TN155,Electrician,Skilled Trade,Trichy,Electrical Wiring;License,Senior,57690,94,Infosys,Full-Time,Bachelor's,Marketing,Yes,Non-IT
+TN156,Pharmacist,Healthcare,Trichy,Pharmacy Degree;Licensing,Entry,27309,137,Amazon,Internship,PhD,Healthcare,No,Non-IT
+TN157,Accountant,Finance,Thanjavur,Tally;GST;Excel,Entry,27519,90,TVS Motors,Part-Time,PhD,Media,Yes,Non-IT
+TN158,Content Writer,Media,Salem,Writing;SEO;Grammar,Mid,29328,87,Cognizant,Full-Time,Not Specified,Media,No,Non-IT
+TN159,Accountant,Finance,Erode,Tally;GST;Excel,Mid,38176,56,HDFC Bank,Full-Time,Bachelor's,Healthcare,Yes,Non-IT
+TN160,AI Engineer,IT,Vellore,Python;ML;TensorFlow,Senior,69883,82,HDFC Bank,Full-Time,Bachelor's,Finance,No,IT
+TN161,Logistics Coordinator,Transport,Thanjavur,Inventory;Coordination,Entry,19885,123,BYJU'S,Part-Time,Not Specified,Finance,No,Non-IT
+TN162,Nurse,Healthcare,Coimbatore,Patient Care;Nursing Degree,Senior,57544,122,Amazon,Internship,Not Specified,Marketing,No,Non-IT
+TN163,Sales Executive,Retail,Trichy,Communication;CRM,Mid,32062,134,Amazon,Internship,Diploma,Healthcare,Yes,Non-IT
+TN164,Civil Engineer,Construction,Tuticorin,AutoCAD;Project Mgmt,Entry,20781,132,Cognizant,Contract,Not Specified,Information Technology,Yes,Non-IT
+TN165,Accountant,Finance,Erode,Tally;GST;Excel,Mid,32364,112,Infosys,Internship,Not Specified,Finance,Yes,Non-IT
+TN166,Data Analyst,IT,Coimbatore,Python;SQL;Excel,Mid,29734,131,BYJU'S,Contract,PhD,Engineering,Yes,IT
+TN167,Mechanical Engineer,Manufacturing,Coimbatore,CAD;SolidWorks,Mid,39525,116,BYJU'S,Full-Time,Master's,Construction,No,Non-IT
+TN168,Content Writer,Media,Salem,Writing;SEO;Grammar,Senior,52897,119,Amazon,Part-Time,Bachelor's,Marketing,Yes,Non-IT
+TN169,Mechanical Engineer,Manufacturing,Chennai,CAD;SolidWorks,Senior,49765,123,Cognizant,Contract,Master's,Healthcare,Yes,Non-IT
+TN170,Web Developer,IT,Salem,HTML;CSS;JavaScript,Entry,24560,147,Infosys,Contract,Bachelor's,Media,No,IT
+TN171,AI Engineer,IT,Trichy,Python;ML;TensorFlow,Mid,38940,101,Apollo Hospitals,Part-Time,Diploma,Transport,Yes,IT
+TN172,Sales Executive,Retail,Tiruppur,Communication;CRM,Entry,23166,83,TVS Motors,Internship,Bachelor's,Engineering,Yes,Non-IT
+TN173,Mechanical Engineer,Manufacturing,Thanjavur,CAD;SolidWorks,Entry,20989,142,TVS Motors,Full-Time,Diploma,Media,No,Non-IT
+TN174,Web Developer,IT,Salem,HTML;CSS;JavaScript,Mid,32341,77,BYJU'S,Part-Time,Not Specified,Finance,No,IT
+TN175,Content Writer,Media,Tuticorin,Writing;SEO;Grammar,Entry,20039,55,BYJU'S,Full-Time,Diploma,Retail,No,Non-IT
+TN176,HR Executive,Corporate,Madurai,HRMS;Recruitment,Senior,52609,73,BYJU'S,Full-Time,Master's,Engineering,No,Non-IT
+TN177,Logistics Coordinator,Transport,Vellore,Inventory;Coordination,Senior,65592,137,HDFC Bank,Contract,Master's,Education,Yes,Non-IT
+TN178,Logistics Coordinator,Transport,Erode,Inventory;Coordination,Senior,65506,121,Amazon,Full-Time,Not Specified,Information Technology,Yes,Non-IT
+TN179,AI Engineer,IT,Thanjavur,Python;ML;TensorFlow,Senior,67748,90,TCS,Contract,Bachelor's,Information Technology,No,IT
+TN180,AI Engineer,IT,Trichy,Python;ML;TensorFlow,Senior,62623,54,HDFC Bank,Internship,Diploma,Information Technology,Yes,IT
+TN181,HR Executive,Corporate,Chennai,HRMS;Recruitment,Entry,18217,142,Amazon,Internship,Master's,Media,Yes,Non-IT
+TN182,Mechanical Engineer,Manufacturing,Thanjavur,CAD;SolidWorks,Entry,20323,57,L&T,Full-Time,PhD,Healthcare,Yes,Non-IT
+TN183,Content Writer,Media,Tiruppur,Writing;SEO;Grammar,Senior,54351,67,Amazon,Part-Time,Master's,Finance,No,Non-IT
+TN184,Accountant,Finance,Salem,Tally;GST;Excel,Entry,20745,117,TCS,Internship,Diploma,Finance,Yes,Non-IT
+TN185,Mechanical Engineer,Manufacturing,Trichy,CAD;SolidWorks,Entry,26685,54,Infosys,Internship,PhD,Education,Yes,Non-IT
+TN186,Digital Marketer,Marketing,Coimbatore,SEO;Google Ads;Content,Mid,37749,97,Infosys,Internship,Master's,Media,No,Non-IT
+TN187,Nurse,Healthcare,Chennai,Patient Care;Nursing Degree,Entry,19223,70,HDFC Bank,Full-Time,PhD,Retail,No,Non-IT
+TN188,Digital Marketer,Marketing,Coimbatore,SEO;Google Ads;Content,Entry,26495,134,L&T,Full-Time,Not Specified,Transport,Yes,Non-IT
+TN189,AI Engineer,IT,Vellore,Python;ML;TensorFlow,Mid,30343,56,Amazon,Part-Time,Master's,Media,No,IT
+TN190,Electrician,Skilled Trade,Trichy,Electrical Wiring;License,Mid,32426,96,L&T,Part-Time,PhD,Engineering,Yes,Non-IT
+TN191,Digital Marketer,Marketing,Thanjavur,SEO;Google Ads;Content,Entry,19216,132,Zoho,Internship,Bachelor's,Engineering,Yes,Non-IT
+TN192,Sales Executive,Retail,Salem,Communication;CRM,Mid,30851,51,Zoho,Internship,Bachelor's,Education,Yes,Non-IT
+TN193,Pharmacist,Healthcare,Vellore,Pharmacy Degree;Licensing,Senior,48614,77,Cognizant,Full-Time,Diploma,Engineering,Yes,Non-IT
+TN194,Data Analyst,IT,Tiruppur,Python;SQL;Excel,Mid,38013,87,TCS,Full-Time,Not Specified,Transport,No,IT
+TN195,Logistics Coordinator,Transport,Salem,Inventory;Coordination,Entry,18219,72,Cognizant,Internship,Master's,Engineering,No,Non-IT
+TN196,Civil Engineer,Construction,Salem,AutoCAD;Project Mgmt,Entry,22374,83,Apollo Hospitals,Part-Time,Diploma,Healthcare,No,Non-IT
+TN197,Content Writer,Media,Trichy,Writing;SEO;Grammar,Entry,21764,96,L&T,Contract,PhD,Education,No,Non-IT
+TN198,Data Analyst,IT,Thanjavur,Python;SQL;Excel,Entry,25443,67,Amazon,Contract,Bachelor's,Education,No,IT
+TN199,AI Engineer,IT,Salem,Python;ML;TensorFlow,Senior,69028,97,L&T,Part-Time,PhD,Healthcare,No,IT
+TN200,Pharmacist,Healthcare,Trichy,Pharmacy Degree;Licensing,Mid,35508,96,BYJU'S,Contract,Not Specified,Retail,Yes,Non-IT
