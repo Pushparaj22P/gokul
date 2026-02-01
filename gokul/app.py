@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import io
 import smtplib
 from email.message import EmailMessage
-import google.generativeai as genai
+from google import genai
 
 # Optional: for PDF export
 try:
@@ -262,4 +262,5 @@ else:
     st.markdown("---")
 
     st.markdown("👨‍💻 Developed by **Gokul & Gokulakrishnan**")
+
 
