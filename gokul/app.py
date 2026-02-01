@@ -19,7 +19,7 @@ except ImportError:
 # Note: In a production app, use st.secrets for API keys
 GEMINI_API_KEY = "AIzaSyBUNK20EnWC-_2OCJODPPoNCtomnKUC26o"
 genai.configure(api_key=GEMINI_API_KEY)
-gemini_model = genai.GenerativeModel("gemini-1.5-pro")
+gemini_model = genai.GenerativeModel("gemini-1.5-flash")
 
 st.set_page_config(page_title="Tamil Nadu Job Market Dashboard", layout="wide")
 
@@ -262,3 +262,4 @@ else:
     st.markdown("---")
 
     st.markdown("👨‍💻 Developed by **Gokul & Gokulakrishnan**")
+
