@@ -7,108 +7,107 @@ import smtplib
 from email.message import EmailMessage
 from google import genai
 
-# Optional: for PDF export
+# Optional PDF export
 try:
     from fpdf import FPDF
     has_fpdf = True
-except ImportError: 
+except ImportError:
     has_fpdf = False
 
+
 # ---------------------------
-# 🤖 GEMINI API CONFIG
+# 🔐 CONFIG
 # ---------------------------
-# Note: In a production app, use st.secrets for API keys
+st.set_page_config(
+    page_title="Tamil Nadu Job Market Dashboard",
+    layout="wide"
+)
 
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-
-
-
-st.set_page_config(page_title="Tamil Nadu Job Market Dashboard", layout="wide")
-
-# Session state to manage navigation
 if "show_dashboard" not in st.session_state:
     st.session_state.show_dashboard = False
 
+
+# ---------------------------
+# 🤖 GEMINI CLIENT (SAFE)
+# ---------------------------
+if "GEMINI_API_KEY" not in st.secrets:
+    st.error("❌ GEMINI_API_KEY not found in Streamlit Secrets")
+    st.stop()
+
+client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
+
+
 # -------------------------------
-# 1️⃣ User Info Page
+# 1️⃣ USER INFO PAGE
 # -------------------------------
 if not st.session_state.show_dashboard:
     st.title("📝 Enter Your Information")
+
     with st.form("user_info_form"):
         name = st.text_input("Name")
         email = st.text_input("Email")
         submitted = st.form_submit_button("Submit")
-        
+
         if submitted:
             if name and email:
                 st.success("✅ Information Submitted")
 
-                # Setup Email
                 msg = EmailMessage()
                 msg.set_content(f"Name: {name}\nEmail: {email}")
                 msg["Subject"] = "New User Info Submission"
-                msg["From"] = "vmgokul07vmg@gmail.com" # Should match login email
+                msg["From"] = "vmgokul07vmg@gmail.com"
                 msg["To"] = "vmgokul07vmg@gmail.com"
 
                 try:
                     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-                        smtp.login("vmgokul07vmg@gmail.com", "wujj mctj bcmr qkxj")
+                        smtp.login(
+                            "vmgokul07vmg@gmail.com",
+                            st.secrets["EMAIL_PASSWORD"]
+                        )
                         smtp.send_message(msg)
                 except Exception as e:
-                    st.error(f"❌ Failed to send email alert: {e}")
+                    st.warning(f"Email not sent: {e}")
 
                 st.session_state.show_dashboard = True
                 st.rerun()
             else:
-                st.warning("Please fill in both Name and Email.")
+                st.warning("Please enter both Name and Email.")
+
 
 # -------------------------------
-# 2️⃣ Dashboard Page
+# 2️⃣ DASHBOARD PAGE
 # -------------------------------
 else:
     st.title("📊 Tamil Nadu Job Market Dashboard")
-    st.markdown("Analyze job trends across districts, sectors, and companies in Tamil Nadu.")
+    st.markdown("Analyze job trends across districts, sectors, and companies.")
 
     @st.cache_data
     def load_data():
-        return pd.read_csv("gokul/tamilnadu_job_market_200_enriched.csv")
+        return pd.read_csv("tamilnadu_job_market_200_enriched.csv")
 
     df = load_data()
 
-    # Improved classification logic to avoid mislabeling Mechanical Engineers as IT
-    def classify_job(row):
-        it_keywords = [
-            "software", "developer", "it", "python", "java",
-            "cloud", "machine learning", "ai", "tech", "full stack",
-            "backend", "frontend", "network", "cyber"
-        ]
-        text = f"{row['Job_Title']} {row['Skills_Required']}".lower()
-        return "IT" if any(k in text for k in it_keywords) else "Non-IT"
-
-    # You can use the existing 'IT_or_Non_IT' column from CSV or this dynamic one
-    df["Job_Type_Calculated"] = df.apply(classify_job, axis=1)
-
     # -------------------------------
-    # Filters
+    # FILTERS
     # -------------------------------
-    st.sidebar.header("🔍 Filter Jobs")
+    st.sidebar.header("🔍 Filters")
 
     district_filter = st.sidebar.multiselect(
-        "Select District(s)",
-        options=sorted(df["District"].unique()),
-        default=sorted(df["District"].unique())
+        "District",
+        sorted(df["District"].unique()),
+        sorted(df["District"].unique())
     )
 
     sector_filter = st.sidebar.multiselect(
-        "Select Job Sector(s)",
-        options=sorted(df["Job_Sector"].unique()),
-        default=sorted(df["Job_Sector"].unique())
+        "Job Sector",
+        sorted(df["Job_Sector"].unique()),
+        sorted(df["Job_Sector"].unique())
     )
 
     exp_filter = st.sidebar.multiselect(
-        "Select Experience Level",
-        options=sorted(df["Experience_Level"].unique()),
-        default=sorted(df["Experience_Level"].unique())
+        "Experience Level",
+        sorted(df["Experience_Level"].unique()),
+        sorted(df["Experience_Level"].unique())
     )
 
     filtered_df = df[
@@ -117,159 +116,120 @@ else:
         (df["Experience_Level"].isin(exp_filter))
     ]
 
-    search_query = st.text_input("🔎 Search Job Title, Skills, Company...")
-    if search_query:
+    search = st.text_input("🔎 Search jobs, skills, companies")
+    if search:
         filtered_df = filtered_df[
-            filtered_df["Job_Title"].str.contains(search_query, case=False) |
-            filtered_df["Skills_Required"].str.contains(search_query, case=False) |
-            filtered_df["Company_Name"].str.contains(search_query, case=False)
+            filtered_df["Job_Title"].str.contains(search, case=False) |
+            filtered_df["Skills_Required"].str.contains(search, case=False) |
+            filtered_df["Company_Name"].str.contains(search, case=False)
         ]
 
     st.markdown(f"### 📌 {len(filtered_df)} Jobs Found")
 
-    # Metrics Row
-    m1, m2, m3 = st.columns(3)
-    m1.metric("Total Jobs", len(filtered_df))
-    if not filtered_df.empty:
-        m2.metric("Avg Salary", f"₹{int(filtered_df['Salary_Monthly'].mean()):,}")
-        m3.metric("Top District", filtered_df['District'].mode()[0])
+    # -------------------------------
+    # METRICS
+    # -------------------------------
+    c1, c2, c3 = st.columns(3)
 
-    st.write("### 💻 IT vs Non-IT Job Distribution")
-    # Using the IT_or_Non_IT column from your CSV for accuracy
+    c1.metric("Total Jobs", len(filtered_df))
+
+    if not filtered_df.empty:
+        c2.metric(
+            "Avg Salary",
+            f"₹{int(filtered_df['Salary_Monthly'].mean()):,}"
+        )
+        c3.metric(
+            "Top District",
+            filtered_df["District"].mode()[0]
+        )
+
     st.bar_chart(filtered_df["IT_or_Non_IT"].value_counts())
 
     st.dataframe(filtered_df, use_container_width=True)
 
     # -------------------------------
-    # Export Section
+    # EXPORTS
     # -------------------------------
-    st.subheader("📤 Export Filtered Data")
+    st.subheader("📤 Export Data")
+
     col1, col2, col3 = st.columns(3)
 
     with col1:
         csv = filtered_df.to_csv(index=False).encode("utf-8")
-        st.download_button("⬇ Download CSV", csv, "filtered_jobs.csv", "text/csv")
+        st.download_button("⬇ CSV", csv, "jobs.csv", "text/csv")
 
     with col2:
-        try:
-            excel_io = io.BytesIO()
-            with pd.ExcelWriter(excel_io, engine="xlsxwriter") as writer:
-                filtered_df.to_excel(writer, index=False)
-            st.download_button(
-                "⬇ Download Excel",
-                excel_io.getvalue(),
-                "filtered_jobs.xlsx",
-                "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-            )
-        except Exception:
-            st.info("Excel export requires 'xlsxwriter' library.")
+        excel_io = io.BytesIO()
+        with pd.ExcelWriter(excel_io, engine="xlsxwriter") as writer:
+            filtered_df.to_excel(writer, index=False)
+        st.download_button(
+            "⬇ Excel",
+            excel_io.getvalue(),
+            "jobs.xlsx",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        )
 
     with col3:
-        if has_fpdf:
-            def df_to_pdf(df_input):
-                pdf = FPDF()
-                pdf.set_auto_page_break(auto=True, margin=10)
-                pdf.add_page()
-                pdf.set_font("Arial", size=10)
-                pdf.cell(200, 10, txt="Tamil Nadu Job Market Report", ln=True, align='C')
-                pdf.ln(10)
-                pdf.set_font("Arial", size=8)
-                for _, row in df_input.iterrows():
-                    # Clean strings to avoid encoding errors in FPDF
-                    line = f"{row['Job_Title']} | {row['Company_Name']} | {row['District']} | {row['Salary_Monthly']}"
-                    pdf.cell(0, 8, line.encode('latin-1', 'replace').decode('latin-1'), ln=1)
-                return pdf.output(dest="S").encode("latin1")
-
-            if st.button("Generate PDF Preview"):
-                pdf_data = df_to_pdf(filtered_df.head(30))
-                st.download_button("⬇ Download PDF", pdf_data, "filtered_jobs.pdf", "application/pdf")
-        else:
-            st.info("PDF export requires 'fpdf' library.")
+        if has_fpdf and st.button("⬇ PDF"):
+            pdf = FPDF()
+            pdf.add_page()
+            pdf.set_font("Arial", size=8)
+            for _, row in filtered_df.head(30).iterrows():
+                line = f"{row['Job_Title']} | {row['Company_Name']} | {row['District']}"
+                pdf.multi_cell(0, 6, line)
+            st.download_button(
+                "Download PDF",
+                pdf.output(dest="S").encode("latin1"),
+                "jobs.pdf",
+                "application/pdf"
+            )
 
     # -------------------------------
-    # Visualizations
+    # VISUALIZATION
     # -------------------------------
-    st.subheader("📈 Job Market Visualizations")
+    st.subheader("📈 Visualizations")
 
-    viz_option = st.radio("Choose a chart", [
-        "Job Count by District",
-        "Average Salary by Sector",
-        "Top Hiring Companies",
-        "Job Count by Experience Level",
-        "Job Sector Distribution"
-    ], horizontal=True)
-
-    if not filtered_df.empty:
-        fig, ax = plt.subplots(figsize=(10, 5))
-        
-        if viz_option == "Job Count by District":
-            filtered_df["District"].value_counts().plot(kind="barh", ax=ax, color="skyblue")
-            ax.set_title("Jobs per District")
-
-        elif viz_option == "Average Salary by Sector":
-            filtered_df.groupby("Job_Sector")["Salary_Monthly"].mean().sort_values().plot(kind="barh", ax=ax, color="lightgreen")
-            ax.set_title("Avg Monthly Salary (INR)")
-
-        elif viz_option == "Top Hiring Companies":
-            filtered_df["Company_Name"].value_counts().head(10).plot(kind="bar", ax=ax, color="orange")
-            ax.set_title("Top 10 Companies")
-
-        elif viz_option == "Job Count by Experience Level":
-            filtered_df["Experience_Level"].value_counts().plot(kind="pie", autopct="%1.1f%%", ax=ax)
-            ax.set_ylabel("") # Remove the 'count' label
-            ax.set_title("Experience Level Split")
-
-        elif viz_option == "Job Sector Distribution":
-            filtered_df["Job_Sector"].value_counts().plot(kind="bar", ax=ax, color="purple")
-            ax.set_title("Jobs by Sector")
-
-        plt.tight_layout()
-        st.pyplot(fig)
-        plt.close(fig) # Clean up memory
-    else:
-        st.warning("No data available for the selected filters.")
+    fig, ax = plt.subplots(figsize=(10, 5))
+    filtered_df["District"].value_counts().plot(kind="barh", ax=ax)
+    st.pyplot(fig)
+    plt.close(fig)
 
     # -------------------------------
-    # 🤖 GEMINI AI SECTION
+    # 🤖 GEMINI AI
     # -------------------------------
     st.markdown("---")
-    st.subheader("🤖 Ask Gemini AI About Job Market")
+    st.subheader("🤖 Ask Gemini AI")
 
-    user_question = st.text_input(
-        "Ask about skills, salary trends, IT vs Non-IT, districts, careers, etc."
-    )
+    user_question = st.text_input("Ask about skills, salaries, trends")
 
     if st.button("Ask Gemini"):
         if user_question.strip():
-            with st.spinner("Gemini is analyzing job market data..."):
-                # Sending a subset of data to stay within token limits
-                data_summary = filtered_df.head(30).to_string()
-                prompt = f"""
-                You are an AI job market analyst for Tamil Nadu.
-                Here is a sample of the current job data:
-                {data_summary}
+            with st.spinner("Analyzing job market..."):
+                data_sample = filtered_df.head(30).to_string()
 
-                User Question: {user_question}
-                
-                Provide a helpful, data-driven answer based on the provided jobs.
-                """
+                prompt = f"""
+You are a job market analyst for Tamil Nadu.
+
+Job data sample:
+{data_sample}
+
+User question:
+{user_question}
+
+Answer clearly and concisely.
+"""
+
                 try:
                     response = client.models.generate_content(
-                    model="gemini-1.5-flash",
-                    contents=prompt
+                        model="gemini-1.5-flash",
+                        contents=prompt
                     )
-                    st.info(response.text)
+                    st.success("Gemini Answer")
+                    st.write(response.text)
                 except Exception as e:
                     st.error(f"AI Error: {e}")
         else:
             st.warning("Please enter a question.")
 
     st.markdown("---")
-
     st.markdown("👨‍💻 Developed by **Gokul & Gokulakrishnan**")
-
-
-
-
-
-
